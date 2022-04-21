@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 40px;
+}
+.fondo{
+    background-color: #FF6B6B;
+    color: black;
+}
+.fondoIcon {
+    background-color: #FF6B6B;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+}
+.btn-primary-fondo{
+    background-color: #FF6B6B;
+}
+.far{
+    color: #FF6B6B;
+    font-size: 18px;
+}

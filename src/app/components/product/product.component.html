@@ -1,0 +1,21 @@
+<app-spinner [isLoading]="isMostrar" [texto]="'Recuperando informacion del producto'"></app-spinner>
+<div class="container mt-3" *ngIf="!isMostrar" >
+    <div class="row">
+        <div class="col-md-4 offset-md-4" >
+            <div class="card">
+                <div class="card-header">
+                    {{title}}
+                </div>
+                <div class="card-body">
+                    <p class="float-end fondoIcon">{{rate}}</p>
+                    <img [src]="img" alt="product.image" width="160" height="320" class="card-img-top">
+                    <p class="text-muted">{{description}} <small class="text-muted badge bg-warning">{{category}}</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-center align-items-center">
+                    <i class="far fa-money-bill-alt">&nbsp;<span>{{price|currency}}</span></i> 
+                </div>
+                <button class="btn btn-primary-fondo mb-1 mt-1" routerLink="/home">Regresar</button>
+            </div>
+        </div>
+    </div>
+</div>
